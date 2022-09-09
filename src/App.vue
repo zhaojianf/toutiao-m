@@ -1,16 +1,27 @@
 <template>
   <div id="app">
-    <!-- 路由出口 -->
-    <router-view />
-    <h1>这是黑马头条项目</h1>
+    <!-- 挂载点 -->
+    <router-view></router-view>
+
   </div>
 </template>
 <script>
 export default {
+  name: 'App',
   data () {
     return {}
   },
   methods: {}
 }
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.toutiao {
+  color: pink;
+}
+.add {
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  background: pink;
+}
+</style>
